@@ -1,7 +1,17 @@
 
-# Boston Housing Dataset
+# Project - EDA with Pandas Using the Boston Housing Data
 
-Begin to use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At minimum, this should include:
+## Introduction
+
+In this section you've learned a lot about importing, cleaning up, analysing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing data set.
+
+## Objectives
+You will be able to:
+* Show mastery of the content covered in this section
+
+# Goals
+
+Use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At minimum, this should include:
 
 * Loading the data (which is stored in the file train.csv)
 * Finding variables with high correlation (use the np.corrcoeff method in combination with iteration)
@@ -61,3 +71,7 @@ Source
 Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean air. J. Environ. Economics and Management 5, 81–102.
 
 Belsley D.A., Kuh, E. and Welsch, R.E. (1980) Regression Diagnostics. Identifying Influential Data and Sources of Collinearity. New York: Wiley.
+
+## Summary
+
+Congratulations, you've completed your first "freeform" exploratory data analysis of a popular data set!
