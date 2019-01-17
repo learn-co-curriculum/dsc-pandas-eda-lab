@@ -1,4 +1,18 @@
 
+# Project - EDA with Pandas Using the Boston Housing Data
+
+## Introduction
+
+In this section you've learned a lot about importing, cleaning up, analysing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing data set, which contains housing values in suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.
+
+## Objectives
+
+You will be able to:
+
+* Load csv files using Pandas
+* Find variables with high correlation
+* Create box plots
+
 # Boston Housing Dataset
 
 Begin to use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At minimum, this should include:
@@ -252,7 +266,7 @@ pd.plotting.scatter_matrix(df, figsize=(10,10));
 ```
 
 
-![png](index_files/index_7_0.png)
+![png](index_files/index_8_0.png)
 
 
 
@@ -271,7 +285,7 @@ plt.ylabel('Number of houses')
 
 
 
-![png](index_files/index_8_1.png)
+![png](index_files/index_9_1.png)
 
 
 # Comment:
@@ -294,7 +308,7 @@ plt.ylabel('Number of Houses')
 
 
 
-![png](index_files/index_10_1.png)
+![png](index_files/index_11_1.png)
 
 
 # Comment:
@@ -316,7 +330,7 @@ plt.ylabel('Number of Houses')
 
 
 
-![png](index_files/index_12_1.png)
+![png](index_files/index_13_1.png)
 
 
 # Comment:
@@ -336,7 +350,7 @@ df.crim.hist()
 
 
 
-![png](index_files/index_14_1.png)
+![png](index_files/index_15_1.png)
 
 
 
@@ -390,7 +404,7 @@ df.medv.plot(kind='box')
 
 
 
-![png](index_files/index_19_1.png)
+![png](index_files/index_20_1.png)
 
 
 # Investigating Correlation
@@ -439,14 +453,14 @@ plt.title('Average Home Values by Home Age')
 
 
 
-![png](index_files/index_24_1.png)
+![png](index_files/index_25_1.png)
 
 
 # Comment
 
 The approximate age of the house appears most significant for homes over 50 years of age. Before this, there appears to be little impact.
 
+## Summary
 
-```python
+Congratulations, you've completed your first "freeform" exploratory data analysis of a popular data set!
 
-```
