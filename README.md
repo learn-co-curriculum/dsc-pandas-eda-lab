@@ -3,11 +3,15 @@
 
 ## Introduction
 
-In this section you've learned a lot about importing, cleaning up, analysing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing data set,  which contains housing values in suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.  
+In this section you've learned a lot about importing, cleaning up, analysing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing data set, which contains housing values in suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.
 
 ## Objectives
+
 You will be able to:
-* Show mastery of the content covered in this section
+
+* Load csv files using Pandas
+* Find variables with high correlation
+* Create box plots
 
 # Goals
 
