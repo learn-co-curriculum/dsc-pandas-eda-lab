@@ -17,11 +17,11 @@ You will be able to:
 
 Use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At minimum, this should include:
 
-* Loading the data (which is stored in the file train.csv)
+* Loading the data (which is stored in the file `train.csv`)
 * Use built-in python functions to explore measures of centrality and dispersion for at least 3 variables
 * Create *meaningful* subsets of the data using selection operations using `.loc`, `.iloc` or related operations. Explain why you used the chosen subsets and do this for 3 possible 2-way splits. State how you think the 2 measures of centrality and/or dispersion might be different for each subset of the data. Examples of potential splits:
     - Create a 2 new dataframes based on your existing data, where one contains all the properties next to the Charles river, and the other one contains properties that aren't.
-    - Create 2 new datagrames based on a certain split for crime rate.
+    - Create 2 new dataframes based on a certain split for crime rate.
 * Next, use histograms and scatterplots to see whether you observe differences for the subsets of the data. Make sure to use subplots so it is easy to compare the relationships.
 
 # Variable Descriptions
@@ -69,9 +69,9 @@ lower status of the population (percent).
 
 #### medv  
 median value of owner-occupied homes in $10000s.
-  
-  
-  
+
+
+
 Source
 Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean air. J. Environ. Economics and Management 5, 81–102.
 
