@@ -17,7 +17,7 @@ You will be able to:
 
 Begin to use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At minimum, this should include:
 
-* Loading the data (which is stored in the file train.csv)
+* Loading the data (which is stored in the file `train.csv`)
 * Finding variables with high correlation (use the np.corrcoeff method in combination with iteration)
 * Commenting on the distribution of at least 3 variables
 * Creating a box plot
@@ -290,7 +290,7 @@ plt.ylabel('Number of houses')
 
 # Comment:
 
-Skewed distribution; most houses in this sample are quiet close to the employment centers, few far
+Skewed distribution; most houses in this sample are quite close to the employment centers, few far
 
 
 ```python
