@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this section you've learned a lot about importing, cleaning up, analysing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing data set, which contains housing values in suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.
+In this section you've learned a lot about importing, cleaning up, analyzing (using descriptive statistics) and visualizing data. In this a more free form project you'll get a chance to practice all of these skills with the Boston Housing data set, which contains housing values in suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.
 
 ## Objectives
 
@@ -13,9 +13,9 @@ You will be able to:
 * Find variables with high correlation
 * Create box plots
 
-# Goals
+## Goals
 
-Use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At minimum, this should include:
+Use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At a minimum, this should include:
 
 * Loading the data (which is stored in the file `train.csv`)
 * Use built-in python functions to explore measures of centrality and dispersion for at least 3 variables
@@ -24,7 +24,7 @@ Use your data munging and visualization skills to conduct an exploratory analysi
     - Create 2 new dataframes based on a certain split for crime rate.
 * Next, use histograms and scatterplots to see whether you observe differences for the subsets of the data. Make sure to use subplots so it is easy to compare the relationships.
 
-# Variable Descriptions
+## Variable Descriptions
 
 This data frame contains the following columns:
 
@@ -50,7 +50,7 @@ average number of rooms per dwelling.
 proportion of owner-occupied units built prior to 1940.
 
 #### dis  
-weighted mean of distances to five Boston employment centres.
+weighted mean of distances to five Boston employment centers.
 
 #### rad  
 index of accessibility to radial highways.
@@ -69,9 +69,9 @@ lower status of the population (percent).
 
 #### medv  
 median value of owner-occupied homes in $10000s.
-
-
-
+  
+  
+  
 Source
 Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean air. J. Environ. Economics and Management 5, 81–102.
 
