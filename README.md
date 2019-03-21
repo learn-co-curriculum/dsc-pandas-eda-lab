@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this section you've learned a lot about importing, cleaning up, analysing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing data set, which contains housing values in suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.
+In this section you've learned a lot about importing, cleaning up, analyzing (using descriptive statistics) and visualizing data. In this a more free form project you'll get a chance to practice all of these skills with the Boston Housing data set, which contains housing values in suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.
 
 ## Objectives
 
@@ -13,17 +13,18 @@ You will be able to:
 * Find variables with high correlation
 * Create box plots
 
-# Boston Housing Dataset
+## Goals
 
-Begin to use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At minimum, this should include:
+Use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At a minimum, this should include:
 
 * Loading the data (which is stored in the file `train.csv`)
-* Finding variables with high correlation (use the np.corrcoeff method in combination with iteration)
-* Commenting on the distribution of at least 3 variables
-* Creating a box plot
-* Investigate other potential relations
+* Use built-in python functions to explore measures of centrality and dispersion for at least 3 variables
+* Create *meaningful* subsets of the data using selection operations using `.loc`, `.iloc` or related operations. Explain why you used the chosen subsets and do this for 3 possible 2-way splits. State how you think the 2 measures of centrality and/or dispersion might be different for each subset of the data. Examples of potential splits:
+    - Create a 2 new dataframes based on your existing data, where one contains all the properties next to the Charles river, and the other one contains properties that aren't.
+    - Create 2 new dataframes based on a certain split for crime rate.
+* Next, use histograms and scatterplots to see whether you observe differences for the subsets of the data. Make sure to use subplots so it is easy to compare the relationships.
 
-# Variable Descriptions
+## Variable Descriptions
 
 This data frame contains the following columns:
 
@@ -49,7 +50,7 @@ average number of rooms per dwelling.
 proportion of owner-occupied units built prior to 1940.
 
 #### dis  
-weighted mean of distances to five Boston employment centres.
+weighted mean of distances to five Boston employment centers.
 
 #### rad  
 index of accessibility to radial highways.
@@ -77,6 +78,9 @@ Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean 
 Belsley D.A., Kuh, E. and Welsch, R.E. (1980) Regression Diagnostics. Identifying Influential Data and Sources of Collinearity. New York: Wiley.
 
 
+## Let's get started!
+
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -84,7 +88,7 @@ import seaborn as sns
 %matplotlib inline
 ```
 
-# Loading the Data
+## Loading the Data
 
 
 ```python
@@ -258,7 +262,7 @@ df.info()
     memory usage: 39.1 KB
 
 
-# Investigating Distributions
+## Investigating Distributions
 
 
 ```python
@@ -266,7 +270,7 @@ pd.plotting.scatter_matrix(df, figsize=(10,10));
 ```
 
 
-![png](index_files/index_8_0.png)
+![png](index_files/index_7_0.png)
 
 
 
@@ -285,10 +289,10 @@ plt.ylabel('Number of houses')
 
 
 
-![png](index_files/index_9_1.png)
+![png](index_files/index_8_1.png)
 
 
-# Comment:
+## Comment
 
 Skewed distribution; most houses in this sample are quite close to the employment centers, few far
 
@@ -308,10 +312,10 @@ plt.ylabel('Number of Houses')
 
 
 
-![png](index_files/index_11_1.png)
+![png](index_files/index_10_1.png)
 
 
-# Comment:
+## Comment
 The number of rooms in houses is approximately normally distributed, with a mean around 6 rooms.
 
 
@@ -330,10 +334,10 @@ plt.ylabel('Number of Houses')
 
 
 
-![png](index_files/index_13_1.png)
+![png](index_files/index_12_1.png)
 
 
-# Comment:
+## Comment
 Most homes are valued around 200K.
 
 
@@ -350,7 +354,7 @@ df.crim.hist()
 
 
 
-![png](index_files/index_15_1.png)
+![png](index_files/index_14_1.png)
 
 
 
@@ -389,7 +393,7 @@ df.crim.quantile(.9)
 
 
 
-# Box Plots
+## Box Plots
 
 
 ```python
@@ -404,10 +408,10 @@ df.medv.plot(kind='box')
 
 
 
-![png](index_files/index_20_1.png)
+![png](index_files/index_19_1.png)
 
 
-# Investigating Correlation
+## Investigating Correlation
 
 
 ```python
@@ -431,7 +435,7 @@ for n, feat1 in enumerate(df.columns):
     rad and tax have a correlation coefficient of 0.9035618963206141!
 
 
-# Other Investigations Will Vary
+## Other Investigations Will Vary
 
 One exploration of home values by age:
 
@@ -453,14 +457,13 @@ plt.title('Average Home Values by Home Age')
 
 
 
-![png](index_files/index_25_1.png)
+![png](index_files/index_24_1.png)
 
 
-# Comment
+## Comment
 
 The approximate age of the house appears most significant for homes over 50 years of age. Before this, there appears to be little impact.
 
 ## Summary
 
 Congratulations, you've completed your first "freeform" exploratory data analysis of a popular data set!
-
