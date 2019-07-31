@@ -77,6 +77,37 @@ Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean 
 
 Belsley D.A., Kuh, E. and Welsch, R.E. (1980) Regression Diagnostics. Identifying Influential Data and Sources of Collinearity. New York: Wiley.
 
+
+## Let's get started!
+
+## Loading the Data
+
+## Investigating Distributions
+
+## Comment
+
+Skewed distribution; most houses in this sample are quite close to the employment centers, few far
+
+## Comment
+
+The number of rooms in houses is approximately normally distributed, with a mean around 6 rooms.
+
+## Comment
+
+Most homes are valued around 200K.
+
+## Box Plots
+
+## Investigating Correlation
+
+## Other Investigations Will Vary
+
+One exploration of home values by age:
+
+## Comment
+
+The approximate age of the house appears most significant for homes over 50 years of age. Before this, there appears to be little impact.
+
 ## Summary
 
 Congratulations, you've completed your first "freeform" exploratory data analysis of a popular data set!
