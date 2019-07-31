@@ -104,17 +104,17 @@ df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -284,7 +284,7 @@ plt.ylabel('Number of houses')
 
 
 
-    <matplotlib.text.Text at 0x2333a2072b0>
+    Text(0, 0.5, 'Number of houses')
 
 
 
@@ -307,7 +307,7 @@ plt.ylabel('Number of Houses')
 
 
 
-    <matplotlib.text.Text at 0x202e38f3d68>
+    Text(0, 0.5, 'Number of Houses')
 
 
 
@@ -316,6 +316,7 @@ plt.ylabel('Number of Houses')
 
 
 ## Comment
+
 The number of rooms in houses is approximately normally distributed, with a mean around 6 rooms.
 
 
@@ -329,7 +330,7 @@ plt.ylabel('Number of Houses')
 
 
 
-    <matplotlib.text.Text at 0x233385df9e8>
+    Text(0, 0.5, 'Number of Houses')
 
 
 
@@ -338,6 +339,7 @@ plt.ylabel('Number of Houses')
 
 
 ## Comment
+
 Most homes are valued around 200K.
 
 
@@ -349,7 +351,7 @@ df.crim.hist()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x233375a45c0>
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a1bb28b70>
 
 
 
@@ -377,7 +379,7 @@ df.crim.max()
 
 
 
-    73.534099999999995
+    73.5341
 
 
 
@@ -403,7 +405,7 @@ df.medv.plot(kind='box')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x2333a1ebe80>
+    <matplotlib.axes._subplots.AxesSubplot at 0x10559fb00>
 
 
 
@@ -428,11 +430,11 @@ for n, feat1 in enumerate(df.columns):
             print('{} and {} have a correlation coefficient of {}!'.format(feat1, feat2, r2))
 ```
 
-    ID and rad have a correlation coefficient of 0.7075262711727569!
-    indus and nox have a correlation coefficient of 0.7500874390908753!
-    indus and tax have a correlation coefficient of 0.7083132697607595!
-    nox and age have a correlation coefficient of 0.7359995828422862!
-    rad and tax have a correlation coefficient of 0.9035618963206141!
+    ID and rad have a correlation coefficient of 0.7075262711727565!
+    indus and nox have a correlation coefficient of 0.7500874390908758!
+    indus and tax have a correlation coefficient of 0.7083132697607584!
+    nox and age have a correlation coefficient of 0.735999582842286!
+    rad and tax have a correlation coefficient of 0.9035618963206117!
 
 
 ## Other Investigations Will Vary
@@ -452,7 +454,7 @@ plt.title('Average Home Values by Home Age')
 
 
 
-    <matplotlib.text.Text at 0x202e5226390>
+    Text(0.5, 1.0, 'Average Home Values by Home Age')
 
 
 
