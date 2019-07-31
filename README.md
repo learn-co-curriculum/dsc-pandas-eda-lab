@@ -284,21 +284,14 @@ pd.plotting.scatter_matrix(df, figsize=(10,10));
 
 
 ```python
-df.dis.hist()
+df.dis.hist();
 plt.title('Distribution of Mean Distances to 5 Boston Employment Centers')
 plt.xlabel('Mean Distance to Employment Centers')
-plt.ylabel('Number of houses')
+plt.ylabel('Number of houses');
 ```
 
 
-
-
-    Text(0, 0.5, 'Number of houses')
-
-
-
-
-![png](index_files/index_8_1.png)
+![png](index_files/index_8_0.png)
 
 
 
@@ -310,21 +303,14 @@ plt.ylabel('Number of houses')
 
 
 ```python
-df.rm.hist()
+df.rm.hist();
 plt.title('Distribution of Rooms per Household')
 plt.xlabel('Number of Rooms')
-plt.ylabel('Number of Houses')
+plt.ylabel('Number of Houses');
 ```
 
 
-
-
-    Text(0, 0.5, 'Number of Houses')
-
-
-
-
-![png](index_files/index_10_1.png)
+![png](index_files/index_10_0.png)
 
 
 
@@ -336,21 +322,14 @@ plt.ylabel('Number of Houses')
 
 
 ```python
-df.medv.hist()
+df.medv.hist();
 plt.title('Distribution of Median Home Values')
 plt.xlabel('Median Home Value (for individual houses over time)')
-plt.ylabel('Number of Houses')
+plt.ylabel('Number of Houses');
 ```
 
 
-
-
-    Text(0, 0.5, 'Number of Houses')
-
-
-
-
-![png](index_files/index_12_1.png)
+![png](index_files/index_12_0.png)
 
 
 
@@ -362,18 +341,11 @@ plt.ylabel('Number of Houses')
 
 ```python
 # Most crime rates are well below 10.
-df.crim.hist()
+df.crim.hist();
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a1bb28b70>
-
-
-
-
-![png](index_files/index_14_1.png)
+![png](index_files/index_14_0.png)
 
 
 
@@ -419,18 +391,11 @@ df.crim.quantile(.9)
 
 
 ```python
-df.medv.plot(kind='box')
+df.medv.plot(kind='box');
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x10559fb00>
-
-
-
-
-![png](index_files/index_19_1.png)
+![png](index_files/index_19_0.png)
 
 
 
@@ -470,21 +435,14 @@ for n, feat1 in enumerate(df.columns):
 ```python
 df['decades'] = df.age // 10
 to_plot = df.groupby('decades').medv.mean()
-to_plot.plot(kind='barh', figsize=(10,8))
+to_plot.plot(kind='barh', figsize=(10,8));
 plt.ylabel('House Age in Decades')
 plt.xlabel('Average Median Value of Homes')
-plt.title('Average Home Values by Home Age')
+plt.title('Average Home Values by Home Age');
 ```
 
 
-
-
-    Text(0.5, 1.0, 'Average Home Values by Home Age')
-
-
-
-
-![png](index_files/index_24_1.png)
+![png](index_files/index_24_0.png)
 
 
 
