@@ -78,7 +78,10 @@ Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean 
 Belsley D.A., Kuh, E. and Welsch, R.E. (1980) Regression Diagnostics. Identifying Influential Data and Sources of Collinearity. New York: Wiley.
 
 
-## Let's get started!
+
+```python
+# Let's get started
+```
 
 
 ```python
@@ -88,7 +91,10 @@ import seaborn as sns
 %matplotlib inline
 ```
 
-## Loading the Data
+
+```python
+# Loading the data
+```
 
 
 ```python
@@ -262,7 +268,10 @@ df.info()
     memory usage: 39.1 KB
 
 
-## Investigating Distributions
+
+```python
+# Investigating Distributions
+```
 
 
 ```python
@@ -292,9 +301,12 @@ plt.ylabel('Number of houses')
 ![png](index_files/index_8_1.png)
 
 
-## Comment
 
-Skewed distribution; most houses in this sample are quite close to the employment centers, few far
+```python
+# Comment:
+# Skewed distribution; most houses in this sample are quite close 
+# to the employment centers, few are far
+```
 
 
 ```python
@@ -315,9 +327,12 @@ plt.ylabel('Number of Houses')
 ![png](index_files/index_10_1.png)
 
 
-## Comment
 
-The number of rooms in houses is approximately normally distributed, with a mean around 6 rooms.
+```python
+# Comment:
+# The number of rooms in houses is approximately normally distributed, 
+# with a mean around 6 rooms.
+```
 
 
 ```python
@@ -338,13 +353,15 @@ plt.ylabel('Number of Houses')
 ![png](index_files/index_12_1.png)
 
 
-## Comment
 
-Most homes are valued around 200K.
+```python
+# Comment:
+# Most homes are valued around 200K.
+```
 
 
 ```python
-#Most crime rates are well below 10.
+# Most crime rates are well below 10.
 df.crim.hist()
 ```
 
@@ -395,7 +412,10 @@ df.crim.quantile(.9)
 
 
 
-## Box Plots
+
+```python
+# Box Plots
+```
 
 
 ```python
@@ -413,7 +433,10 @@ df.medv.plot(kind='box')
 ![png](index_files/index_19_1.png)
 
 
-## Investigating Correlation
+
+```python
+# Investigating Correlation
+```
 
 
 ```python
@@ -437,9 +460,11 @@ for n, feat1 in enumerate(df.columns):
     rad and tax have a correlation coefficient of 0.9035618963206117!
 
 
-## Other Investigations Will Vary
 
-One exploration of home values by age:
+```python
+# Other investigations will vary
+# One exploration of home values by age:
+```
 
 
 ```python
@@ -462,9 +487,12 @@ plt.title('Average Home Values by Home Age')
 ![png](index_files/index_24_1.png)
 
 
-## Comment
 
-The approximate age of the house appears most significant for homes over 50 years of age. Before this, there appears to be little impact.
+```python
+# Comment:
+# The approximate age of the house appears most significant for homes over 50 years of age. 
+# Before this, there appears to be little impact.
+```
 
 ## Summary
 
