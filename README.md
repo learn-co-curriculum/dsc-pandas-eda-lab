@@ -78,7 +78,11 @@ Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean 
 Belsley D.A., Kuh, E. and Welsch, R.E. (1980) Regression Diagnostics. Identifying Influential Data and Sources of Collinearity. New York: Wiley.
 
 
-## Let's get started!
+
+```python
+# __SOLUTION__ 
+# Let's get started
+```
 
 
 ```python
@@ -89,7 +93,11 @@ import seaborn as sns
 %matplotlib inline
 ```
 
-## Loading the Data
+
+```python
+# __SOLUTION__ 
+# Loading the data
+```
 
 
 ```python
@@ -265,7 +273,11 @@ df.info()
     memory usage: 39.1 KB
 
 
-## Investigating Distributions
+
+```python
+# __SOLUTION__ 
+# Investigating Distributions
+```
 
 
 ```python
@@ -297,9 +309,13 @@ plt.ylabel('Number of houses')
 ![png](index_files/index_8_1.png)
 
 
-## Comment
 
-Skewed distribution; most houses in this sample are quite close to the employment centers, few far
+```python
+# __SOLUTION__ 
+# Comment:
+# Skewed distribution; most houses in this sample are quite close 
+# to the employment centers, few are far
+```
 
 
 ```python
@@ -321,9 +337,13 @@ plt.ylabel('Number of Houses')
 ![png](index_files/index_10_1.png)
 
 
-## Comment
 
-The number of rooms in houses is approximately normally distributed, with a mean around 6 rooms.
+```python
+# __SOLUTION__ 
+# Comment:
+# The number of rooms in houses is approximately normally distributed, 
+# with a mean around 6 rooms.
+```
 
 
 ```python
@@ -345,14 +365,17 @@ plt.ylabel('Number of Houses')
 ![png](index_files/index_12_1.png)
 
 
-## Comment
 
-Most homes are valued around 200K.
+```python
+# __SOLUTION__ 
+# Comment:
+# Most homes are valued around 200K.
+```
 
 
 ```python
 # __SOLUTION__ 
-#Most crime rates are well below 10.
+# Most crime rates are well below 10.
 df.crim.hist()
 ```
 
@@ -406,7 +429,11 @@ df.crim.quantile(.9)
 
 
 
-## Box Plots
+
+```python
+# __SOLUTION__ 
+# Box Plots
+```
 
 
 ```python
@@ -425,7 +452,11 @@ df.medv.plot(kind='box')
 ![png](index_files/index_19_1.png)
 
 
-## Investigating Correlation
+
+```python
+# __SOLUTION__ 
+# Investigating Correlation
+```
 
 
 ```python
@@ -451,9 +482,12 @@ for n, feat1 in enumerate(df.columns):
     rad and tax have a correlation coefficient of 0.9035618963206117!
 
 
-## Other Investigations Will Vary
 
-One exploration of home values by age:
+```python
+# __SOLUTION__ 
+# Other investigations will vary
+# One exploration of home values by age:
+```
 
 
 ```python
@@ -477,9 +511,13 @@ plt.title('Average Home Values by Home Age')
 ![png](index_files/index_24_1.png)
 
 
-## Comment
 
-The approximate age of the house appears most significant for homes over 50 years of age. Before this, there appears to be little impact.
+```python
+# __SOLUTION__ 
+# Comment:
+# The approximate age of the house appears most significant for homes over 50 years of age. 
+# Before this, there appears to be little impact.
+```
 
 ## Summary
 
