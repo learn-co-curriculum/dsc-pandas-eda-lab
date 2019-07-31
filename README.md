@@ -77,9 +77,8 @@ Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean 
 
 Belsley D.A., Kuh, E. and Welsch, R.E. (1980) Regression Diagnostics. Identifying Influential Data and Sources of Collinearity. New York: Wiley.
 
-## Summary
 
-Congratulations, you've completed your first "freeform" exploratory data analysis of a popular data set!
+## Let's get started!
 
 
 ```python
@@ -89,6 +88,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 %matplotlib inline
 ```
+
+## Loading the Data
 
 
 ```python
@@ -105,17 +106,17 @@ df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -264,6 +265,8 @@ df.info()
     memory usage: 39.1 KB
 
 
+## Investigating Distributions
+
 
 ```python
 # __SOLUTION__ 
@@ -271,7 +274,7 @@ pd.plotting.scatter_matrix(df, figsize=(10,10));
 ```
 
 
-![png](index_files/index_4_0.png)
+![png](index_files/index_7_0.png)
 
 
 
@@ -286,13 +289,17 @@ plt.ylabel('Number of houses')
 
 
 
-    <matplotlib.text.Text at 0x2333a2072b0>
+    Text(0, 0.5, 'Number of houses')
 
 
 
 
-![png](index_files/index_5_1.png)
+![png](index_files/index_8_1.png)
 
+
+## Comment
+
+Skewed distribution; most houses in this sample are quite close to the employment centers, few far
 
 
 ```python
@@ -306,13 +313,17 @@ plt.ylabel('Number of Houses')
 
 
 
-    <matplotlib.text.Text at 0x202e38f3d68>
+    Text(0, 0.5, 'Number of Houses')
 
 
 
 
-![png](index_files/index_6_1.png)
+![png](index_files/index_10_1.png)
 
+
+## Comment
+
+The number of rooms in houses is approximately normally distributed, with a mean around 6 rooms.
 
 
 ```python
@@ -326,13 +337,17 @@ plt.ylabel('Number of Houses')
 
 
 
-    <matplotlib.text.Text at 0x233385df9e8>
+    Text(0, 0.5, 'Number of Houses')
 
 
 
 
-![png](index_files/index_7_1.png)
+![png](index_files/index_12_1.png)
 
+
+## Comment
+
+Most homes are valued around 200K.
 
 
 ```python
@@ -344,12 +359,12 @@ df.crim.hist()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x233375a45c0>
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a1bb28b70>
 
 
 
 
-![png](index_files/index_8_1.png)
+![png](index_files/index_14_1.png)
 
 
 
@@ -374,7 +389,7 @@ df.crim.max()
 
 
 
-    73.534099999999995
+    73.5341
 
 
 
@@ -391,6 +406,8 @@ df.crim.quantile(.9)
 
 
 
+## Box Plots
+
 
 ```python
 # __SOLUTION__ 
@@ -400,13 +417,15 @@ df.medv.plot(kind='box')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x2333a1ebe80>
+    <matplotlib.axes._subplots.AxesSubplot at 0x10559fb00>
 
 
 
 
-![png](index_files/index_12_1.png)
+![png](index_files/index_19_1.png)
 
+
+## Investigating Correlation
 
 
 ```python
@@ -425,12 +444,16 @@ for n, feat1 in enumerate(df.columns):
             print('{} and {} have a correlation coefficient of {}!'.format(feat1, feat2, r2))
 ```
 
-    ID and rad have a correlation coefficient of 0.7075262711727569!
-    indus and nox have a correlation coefficient of 0.7500874390908753!
-    indus and tax have a correlation coefficient of 0.7083132697607595!
-    nox and age have a correlation coefficient of 0.7359995828422862!
-    rad and tax have a correlation coefficient of 0.9035618963206141!
+    ID and rad have a correlation coefficient of 0.7075262711727565!
+    indus and nox have a correlation coefficient of 0.7500874390908758!
+    indus and tax have a correlation coefficient of 0.7083132697607584!
+    nox and age have a correlation coefficient of 0.735999582842286!
+    rad and tax have a correlation coefficient of 0.9035618963206117!
 
+
+## Other Investigations Will Vary
+
+One exploration of home values by age:
 
 
 ```python
@@ -446,10 +469,18 @@ plt.title('Average Home Values by Home Age')
 
 
 
-    <matplotlib.text.Text at 0x202e5226390>
+    Text(0.5, 1.0, 'Average Home Values by Home Age')
 
 
 
 
-![png](index_files/index_15_1.png)
+![png](index_files/index_24_1.png)
 
+
+## Comment
+
+The approximate age of the house appears most significant for homes over 50 years of age. Before this, there appears to be little impact.
+
+## Summary
+
+Congratulations, you've completed your first "freeform" exploratory data analysis of a popular data set!
