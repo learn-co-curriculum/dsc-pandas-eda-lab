@@ -441,10 +441,10 @@ for n, feat1 in enumerate(df.columns):
 ```
 
     ID and rad have a correlation coefficient of 0.7075262711727565!
-    indus and nox have a correlation coefficient of 0.7500874390908758!
+    indus and nox have a correlation coefficient of 0.7500874390908759!
     indus and tax have a correlation coefficient of 0.7083132697607584!
-    nox and age have a correlation coefficient of 0.735999582842286!
-    rad and tax have a correlation coefficient of 0.9035618963206117!
+    nox and age have a correlation coefficient of 0.7359995828422857!
+    rad and tax have a correlation coefficient of 0.9035618963206118!
 
 
 
@@ -459,7 +459,7 @@ for n, feat1 in enumerate(df.columns):
 # __SOLUTION__ 
 df['decades'] = df.age // 10
 to_plot = df.groupby('decades').medv.mean()
-to_plot.plot(kind='barh', figsize=(10,8));
+to_plot.plot(kind='barh', figsize=(10,8))
 plt.ylabel('House Age in Decades')
 plt.xlabel('Average Median Value of Homes')
 plt.title('Average Home Values by Home Age');
