@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this section you've learned a lot about importing, cleaning up, analyzing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing data set, which contains housing values in the suburbs of Boston. The Boston Housing Data is commonly used by aspiring data scientists.
+In this section you've learned a lot about importing, cleaning up, analyzing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing dataset, which contains housing values in the suburbs of Boston. The Boston housing data is commonly used by aspiring Data Scientists.
 
 ## Objectives
 
@@ -17,16 +17,16 @@ You will be able to:
 
 Use your data munging and visualization skills to conduct an exploratory analysis of the dataset below. At a minimum, this should include:
 
-* Loading the data (which is stored in the file `train.csv`)
-* Use built-in python functions to explore measures of centrality and dispersion for at least 3 variables
-* Create *meaningful* subsets of the data using selection operations like `.loc`, `.iloc` or related operations. Explain why you used the chosen subsets and do this for 3 possible 2-way splits. State how you think the 2 measures of centrality and/or dispersion might be different for each subset of the data. Examples of potential splits:
-    - Create 2 new dataframes based on your existing data, where one contains all the properties next to the Charles river, and the other one contains properties that aren't.
-    - Create 2 new dataframes based on a certain split for crime rate.
+* Loading the data (which is stored in the file `'train.csv'`) 
+* Use built-in Python functions to explore measures of centrality and dispersion for at least 3 variables
+* Create *meaningful* subsets of the data using selection operations like `.loc`, `.iloc`, or related operations.   Explain why you used the chosen subsets and do this for three possible 2-way splits. State how you think the two measures of centrality and/or dispersion might be different for each subset of the data. Examples of potential splits:
+    - Create two new DataFrames based on your existing data, where one contains all the properties next to the Charles river, and the other one contains properties that aren't 
+    - Create two new DataFrames based on a certain split for crime rate 
 * Next, use histograms and scatter plots to see whether you observe differences for the subsets of the data. Make sure to use subplots so it is easy to compare the relationships.
 
 ## Variable Descriptions
 
-This data frame contains the following columns:
+This DataFrame contains the following columns:
 
 #### crim  
 per capita crime rate by town.
@@ -479,4 +479,4 @@ plt.title('Average Home Values by Home Age');
 
 ## Summary
 
-Congratulations, you've completed your first "free form" exploratory data analysis of a popular data set!
+Congratulations, you've completed your first "free form" exploratory data analysis of a popular dataset!
