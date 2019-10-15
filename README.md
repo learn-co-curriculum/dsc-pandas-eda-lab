@@ -9,9 +9,7 @@ In this section you've learned a lot about importing, cleaning up, analyzing (us
 
 You will be able to:
 
-* Load csv files using Pandas
-* Find variables with high correlation
-* Create box plots
+* Perform a full exploratory data analysis process to gain insight about a dataset 
 
 ## Goals
 
@@ -28,50 +26,22 @@ Use your data munging and visualization skills to conduct an exploratory analysi
 
 This DataFrame contains the following columns:
 
-#### crim  
-per capita crime rate by town.
-
-#### zn  
-proportion of residential land zoned for lots over 25,000 sq.ft.
-
-#### indus  
-proportion of non-retail business acres per town.
-
-#### chas  
-Charles River dummy variable (= 1 if tract bounds river; 0 otherwise).
-
-#### nox  
-nitrogen oxide concentration (parts per 10 million).
-
-#### rm  
-average number of rooms per dwelling.
-
-#### age  
-proportion of owner-occupied units built prior to 1940.
-
-#### dis  
-weighted mean of distances to five Boston employment centers.
-
-#### rad  
-index of accessibility to radial highways.
-
-#### tax  
-full-value property-tax rate per $10,000.
-
-#### ptratio  
-pupil-teacher ratio by town.
-
-#### black  
-1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town.
-
-#### lstat  
-lower status of the population (percent).
-
-#### medv  
-median value of owner-occupied homes in $10000s.
+- `crim`: per capita crime rate by town  
+- `zn`: proportion of residential land zoned for lots over 25,000 sq.ft  
+- `indus`: proportion of non-retail business acres per town   
+- `chas`: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)  
+- `nox`: nitrogen oxide concentration (parts per 10 million)   
+- `rm`: average number of rooms per dwelling   
+- `age`: proportion of owner-occupied units built prior to 1940  
+- `dis`: weighted mean of distances to five Boston employment centers   
+- `rad`: index of accessibility to radial highways   
+- `tax`: full-value property-tax rate per \$10,000   
+- `ptratio`: pupil-teacher ratio by town    
+- `black`: 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town   
+- `lstat`: lower status of the population (percent)   
+- `medv`: median value of owner-occupied homes in $10000s 
   
-  
-  
+    
 Source
 Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean air. J. Environ. Economics and Management 5, 81–102.
 
@@ -292,7 +262,7 @@ pd.plotting.scatter_matrix(df, figsize=(10,10));
 
 ```python
 # __SOLUTION__ 
-df.dis.hist();
+df['dis'].hist();
 plt.title('Distribution of Mean Distances to 5 Boston Employment Centers')
 plt.xlabel('Mean Distance to Employment Centers')
 plt.ylabel('Number of houses');
@@ -313,7 +283,7 @@ plt.ylabel('Number of houses');
 
 ```python
 # __SOLUTION__ 
-df.rm.hist();
+df['rm'].hist();
 plt.title('Distribution of Rooms per Household')
 plt.xlabel('Number of Rooms')
 plt.ylabel('Number of Houses');
@@ -334,7 +304,7 @@ plt.ylabel('Number of Houses');
 
 ```python
 # __SOLUTION__ 
-df.medv.hist();
+df['medv'].hist();
 plt.title('Distribution of Median Home Values')
 plt.xlabel('Median Home Value (for individual houses over time)')
 plt.ylabel('Number of Houses');
@@ -355,7 +325,7 @@ plt.ylabel('Number of Houses');
 ```python
 # __SOLUTION__ 
 # Most crime rates are well below 10.
-df.crim.hist();
+df['crim'].hist();
 ```
 
 
@@ -365,7 +335,7 @@ df.crim.hist();
 
 ```python
 # __SOLUTION__ 
-df.crim.quantile(.5)
+df['crim'].quantile(.5)
 ```
 
 
@@ -378,7 +348,7 @@ df.crim.quantile(.5)
 
 ```python
 # __SOLUTION__ 
-df.crim.max()
+df['crim'].max()
 ```
 
 
@@ -391,7 +361,7 @@ df.crim.max()
 
 ```python
 # __SOLUTION__ 
-df.crim.quantile(.9)
+df['crim'].quantile(.9)
 ```
 
 
@@ -410,7 +380,7 @@ df.crim.quantile(.9)
 
 ```python
 # __SOLUTION__ 
-df.medv.plot(kind='box');
+df['medv'].plot(kind='box');
 ```
 
 
