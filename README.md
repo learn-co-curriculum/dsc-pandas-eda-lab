@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this section you've learned a lot about importing, cleaning up, analyzing (using descriptive statistics) and visualizing data. In this more free form project you'll get a chance to practice all of these skills with the Boston Housing dataset, which contains housing values in the suburbs of Boston. The Boston housing data is commonly used by aspiring Data Scientists.
+In this section, you've learned a lot about importing, cleaning up, analyzing (using descriptive statistics) and visualizing data. In this more free-form project, you'll get a chance to practice all of these skills with the Boston Housing dataset, which contains housing values in the suburbs of Boston. The Boston housing data is commonly used by aspiring Data Scientists.
 
 ## Objectives
 
@@ -37,7 +37,7 @@ This DataFrame contains the following columns:
 - `rad`: index of accessibility to radial highways   
 - `tax`: full-value property-tax rate per \$10,000   
 - `ptratio`: pupil-teacher ratio by town    
-- `black`: 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town   
+- `b`: 1000(Bk - 0.63)^2 where Bk is the proportion of African American individuals by town   
 - `lstat`: lower status of the population (percent)   
 - `medv`: median value of owner-occupied homes in $10000s 
   
