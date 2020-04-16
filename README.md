@@ -63,13 +63,13 @@ A preview of some of the columns:
 
 
 ```python
-# __SOLUTION__ 
-# Let's get started
+# Let's get started importing the necessary libraries
 ```
 
 
 ```python
 # __SOLUTION__ 
+# Let's get started importing the necessary libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -78,13 +78,13 @@ import matplotlib.pyplot as plt
 
 
 ```python
-# __SOLUTION__ 
 # Loading the data
 ```
 
 
 ```python
 # __SOLUTION__ 
+# Loading the data
 df = pd.read_csv('ames_train.csv')
 print(df.shape)
 df.head()
@@ -267,7 +267,14 @@ df.head()
 
 
 ```python
+# Investigate the Data
+df.info()
+```
+
+
+```python
 # __SOLUTION__ 
+# Investigate the Data
 df.info()
 ```
 
@@ -361,24 +368,29 @@ df.info()
 
 
 ```python
-# __SOLUTION__ 
 # Investigating Distributions using scatter_matrix
 ```
 
 
 ```python
 # __SOLUTION__ 
+# Investigating Distributions using scatter_matrix
 pd.plotting.scatter_matrix(df[['LotArea', 'SalePrice', 'YrSold', 'YearBuilt']], figsize=(10,10));
 ```
 
 
-![png](index_files/index_7_0.png)
+![png](index_files/index_8_0.png)
 
 
 
 ```python
-# __SOLUTION__ 
+# Create a plot that shows the SalesPrice Distribution
+```
 
+
+```python
+# __SOLUTION__ 
+# Create a plot that shows the SalesPrice Distribution
 fig, ax = plt.subplots(figsize=(10, 7))
 ax.hist(df['SalePrice'], bins='auto')
 ax.set_title('Distribution of Sale Prices')
@@ -388,7 +400,7 @@ ax.axvline(df['SalePrice'].mean(), color='black');
 ```
 
 
-![png](index_files/index_8_0.png)
+![png](index_files/index_10_0.png)
 
 
 
@@ -400,7 +412,13 @@ ax.axvline(df['SalePrice'].mean(), color='black');
 
 
 ```python
+# Create a plot that shows the LotArea Distribution
+```
+
+
+```python
 # __SOLUTION__ 
+# Create a plot that shows the LotArea Distribution
 fig, ax = plt.subplots(figsize=(10, 7))
 
 ax.hist(df['LotArea'], bins='auto');
@@ -410,7 +428,7 @@ ax.set_ylabel('Number of Houses');
 ```
 
 
-![png](index_files/index_10_0.png)
+![png](index_files/index_13_0.png)
 
 
 
@@ -423,7 +441,13 @@ ax.set_ylabel('Number of Houses');
 
 
 ```python
+# Create a plot that shows the Distribution of the overall house condition
+```
+
+
+```python
 # __SOLUTION__ 
+# Create a plot that shows the Distribution of the overall house condition
 fig, ax = plt.subplots(figsize=(10, 7))
 
 ax.hist(df['OverallCond'], bins='auto');
@@ -433,7 +457,7 @@ ax.set_ylabel('Number of Houses');
 ```
 
 
-![png](index_files/index_12_0.png)
+![png](index_files/index_16_0.png)
 
 
 
@@ -445,38 +469,32 @@ ax.set_ylabel('Number of Houses');
 
 
 ```python
-# __SOLUTION__ 
-# Box Plots
+# Create a Box Plot for SalePrice
 ```
 
 
 ```python
 # __SOLUTION__ 
+# Create a Box Plot for SalePrice
 fig, ax = plt.subplots(figsize=(10, 7))
 ax.boxplot(df['SalePrice'])
 ax.set_ylabel('House Price ($)');
 ```
 
 
-![png](index_files/index_15_0.png)
+![png](index_files/index_19_0.png)
 
 
 
 ```python
 # __SOLUTION__ 
-# Investigating Correlation
+## Investigation Correlations with Sale Price
 ```
 
 
 ```python
 # __SOLUTION__ 
-import numpy as np
-```
-
-
-```python
-# __SOLUTION__ 
-### Investigation Correlations with Sale Price
+## Investigation Correlations with Sale Price
 df.corr()['SalePrice'].sort_values()
 ```
 
@@ -530,18 +548,18 @@ df.corr()['SalePrice'].sort_values()
 # __SOLUTION__ 
 # It looks like OverallQual and GrLivArea are most highly correlated with SalePrice.
 # These features would be a good place to start for modeling
-```
-
-
-```python
-# __SOLUTION__ 
 # Other investigations will vary
-# Exploration of home values by age:
+```
+
+
+```python
+# Perform an Exploration of home values by age
 ```
 
 
 ```python
 # __SOLUTION__ 
+# Perform an Exploration of home values by age
 df['age'] = df['YrSold'] - df['YearBuilt']
 df['decades'] = df.age // 10
 to_plot = df.groupby('decades').SalePrice.mean()
@@ -552,7 +570,7 @@ plt.title('Average Home Values by Home Age');
 ```
 
 
-![png](index_files/index_21_0.png)
+![png](index_files/index_24_0.png)
 
 
 
