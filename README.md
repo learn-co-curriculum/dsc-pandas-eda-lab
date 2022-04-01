@@ -330,7 +330,7 @@ Now, find the ***most negatively correlated*** column:
 # Your code here
 ```
 
-Once you have your answer, edit the code below so that it produces a scatter plot of the relevant columns.
+Once you have your answer, edit the code below so that it produces a box plot of the relevant columns.
 
 
 ```python
