@@ -606,7 +606,9 @@ plot_histogram(
 ```
 
 
+    
 ![png](index_files/index_15_0.png)
+    
 
 
 Now, print out the mean, median, and standard deviation:
@@ -660,7 +662,9 @@ plot_histogram(
 ```
 
 
+    
 ![png](index_files/index_21_0.png)
+    
 
 
 Now, print out the mean, median, and standard deviation:
@@ -707,7 +711,9 @@ plot_histogram(
 ```
 
 
+    
 ![png](index_files/index_27_0.png)
+    
 
 
 Now, print out the mean, median, and standard deviation:
@@ -812,7 +818,9 @@ ax.legend();
 ```
 
 
+    
 ![png](index_files/index_37_0.png)
+    
 
 
 Interpret the plot above. What does it tell us about these overall condition categories, and the relationship between overall condition and sale price? Is there anything surprising?
@@ -947,7 +955,7 @@ print("Minimum Correlation Value:", min_corr_value)
     Minimum Correlation Value: -0.1359073708421417
 
 
-Once you have your answer, edit the code below so that it produces a scatter plot of the relevant columns.
+Once you have your answer, edit the code below so that it produces a box plot of the relevant columns.
 
 
 ```python
@@ -979,7 +987,9 @@ ax2.set_ylabel("Sale Price");
 ```
 
 
+    
 ![png](index_files/index_45_0.png)
+    
 
 
 Interpret the results below. Consult `data/data_description.txt` as needed.
@@ -1075,7 +1085,9 @@ ax.set_ylabel("Sale Price");
 ```
 
 
+    
 ![png](index_files/index_51_0.png)
+    
 
 
 Interpret this plot below:
