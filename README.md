@@ -1084,7 +1084,7 @@ print("Maximum Correlation Value:", max_corr_value)
 print("\npandas way")
 # Get a list of correlations with SalePrice, sorted from smallest
 # to largest
-correlation_series = df.corr()['SalePrice'].sort_values()
+correlation_series = df.corr(numeric_only = True)['SalePrice'].sort_values()
 # Select second to last correlation, since the highest (last)
 # correlation will be SalePrice correlating 100% with itself
 max_corr_value = correlation_series.iloc[-2]
